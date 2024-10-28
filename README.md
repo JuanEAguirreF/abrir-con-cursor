@@ -1,44 +1,44 @@
-# Cursor Context Menu Installer
+# Instalador del Menú Contextual de Cursor
 
-This project provides a simple way to add and remove a context menu item in Windows Explorer for opening directories with the Cursor application.
+Este proyecto proporciona una manera sencilla de agregar y eliminar un elemento en el menú contextual del Explorador de Windows para abrir directorios con la aplicación Cursor.
 
 <div align="center">
   <p>
-    🤝 Show your support - give a ⭐️ if you liked the tool 🤝
+    🤝 Muestra tu apoyo - dale una ⭐️ si te gustó la herramienta 🤝
   </p>
   <p>
-    <a target="_blank" href='https://twitter.com/hexcreator'><img src="https://img.shields.io/twitter/follow/hexcreator" alt="X (formerly Twitter) Follow" width="180" height="30"/></a>
+    <a target="_blank" href='https://twitter.com/hexcreator'><img src="https://img.shields.io/twitter/follow/hexcreator" alt="Seguir en X (anteriormente Twitter)" width="180" height="30"/></a>
   </p>
 </div>
 
 ---
 
-## Installation
+## Instalación
 
-To install the context menu item, run the `install` executable. By default, it will use the path `C:\Users\%USERNAME%\AppData\Local\Programs\cursor\Cursor.exe` for the Cursor application. You can also provide a custom path to the Cursor executable as a command-line argument.
+Para instalar el elemento del menú contextual, ejecuta el ejecutable `install`. Por defecto, utilizará la ruta `C:\Users\%USERNAME%\AppData\Local\Programs\cursor\Cursor.exe` para la aplicación Cursor. También puedes proporcionar una ruta personalizada al ejecutable de Cursor como argumento en la línea de comandos.
 
-## Compilation
-I used MinGW to compile this project, but you can use any other compiler that supports C++. Example commands:
+## Compilación
+
+Usé MinGW para compilar este proyecto, pero puedes usar cualquier otro compilador que soporte C++. Comandos de ejemplo:
 
 ```bash
 g++ -o install install.cpp -static
 g++ -o uninstall uninstall.cpp -static
 ```
 
-## Usage Instructions
+## Instrucciones de Uso
 
-To use the context menu item, follow these steps:
+Para utilizar el elemento del menú contextual, sigue estos pasos:
 
-1. **Download the Executables:**
-   - Visit the [releases page](https://github.com/hexcreator/open-with-cursor/releases) of this project.
-   - Download the `install.exe` and `uninstall.exe` files from the latest release.
+1. **Descarga los Ejecutables:**
+   - Visita la [página de lanzamientos](https://github.com/hexcreator/open-with-cursor/releases) de este proyecto.
+   - Descarga los archivos `install.exe` y `uninstall.exe` de la última versión.
 
-2. **Install the Context Menu Item:**
-   - Run the `install.exe` file.
-   - By default, it will use the path `C:\Users\%USERNAME%\AppData\Local\Programs\cursor\Cursor.exe` for the Cursor application.
-   - If you want to use a custom path for the Cursor executable, provide the path as a command-line argument when running `install.exe`.
-   - You can also provide the command-line argument `-a` to install the context menu item for all files, not just directories.
+2. **Instala el Elemento del Menú Contextual:**
+   - Ejecuta el archivo `install.exe`.
+   - Por defecto, utilizará la ruta `C:\Users\%USERNAME%\AppData\Local\Programs\cursor\Cursor.exe` para la aplicación Cursor.
+   - Si deseas usar una ruta personalizada para el ejecutable de Cursor, proporciona la ruta como argumento en la línea de comandos al ejecutar `install.exe`.
+   - También puedes proporcionar el argumento de línea de comandos `-a` para instalar el elemento del menú contextual para todos los archivos, no solo para directorios.
 
-3. **Uninstall the Context Menu Item:**
-   - Run the `uninstall.exe` file to remove the context menu item.
-
+3. **Desinstala el Elemento del Menú Contextual:**
+   - Ejecuta el archivo `uninstall.exe` para eliminar el elemento del menú contextual.
